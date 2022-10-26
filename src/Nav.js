@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./assets/css/home.css";
+import "./assets/css/nav.css";
 import logo from "./assets/images/logo_full.png";
+import Home from "./components/home";
 import Kuensel from "./components/kuensel";
 import TheBhutanese from "./components/thebhutanese";
 
-export default class Home extends Component {
+export default class Nav extends Component {
 	render() {
 		return (
 			<Router>
@@ -35,7 +36,7 @@ export default class Home extends Component {
 				</header>
 				<div className="routes">
 					<Routes>
-						<Route exact path="/" />
+						<Route exact path="/" element={<Home />} />
 						<Route path="/thebhutanese" element={<TheBhutanese />} />
 						<Route path="/kuensel" element={<Kuensel />} />
 					</Routes>

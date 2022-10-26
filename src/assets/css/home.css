@@ -1,83 +1,66 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica;
+.about {
+	padding: 0 8%;
+	margin: 0% 5% 8% 5%;
 }
 
-header {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 5px 40px;
-	box-shadow: 0 1px 8px #ddd;
-	transition: all 0.3s ease 0s;
+.about p {
+	padding-top: 3%;
+	line-height: 1.5;
+	text-align: justify;
 }
 
-.logo_img {
-	height: 56px;
-	width: 150px;
+.how_it_works {
+	margin-top: 3%;
+	padding: 2% 9% 5% 9%;
 }
 
-.logo {
-	margin-right: auto;
-	margin-top: 10px;
+.how_it_works h1 {
+	margin: 0 5%;
+	padding-bottom: 3%;
 }
 
-header li {
-	list-style: none;
-	display: inline-block;
-	padding: 0 20px;
+.steps {
+	margin: 0 5% 0 8%;
 }
 
-header a {
-	text-decoration: none;
-	color: #555;
-	transition: all 0.3s ease 0s;
+.how_it_works h2 {
+	padding-bottom: 1%;
 }
 
-header .button {
-	margin-left: auto;
-}
-
-header .button li {
-	padding: 5px;
-}
-
-.link_effect {
-	background-image: linear-gradient(
-		to right,
-		#1e3f66,
-		#245ca0 50%,
-		#000000 50%
-	);
-	background-size: 200% 100%;
-	background-position: -100%;
-	display: inline-block;
-	padding: 5px 0;
+.how_it_works ul {
 	position: relative;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	transition: all 0.3s ease-in-out;
+	list-style: none;
+	padding: 1%;
+	line-height: 1.5;
+	text-align: justify;
 }
 
-.link_effect:before {
+.how_it_works ul:before {
 	content: "";
-	background: #1e3f66;
-	display: block;
 	position: absolute;
-	bottom: -3px;
+	top: 0;
 	left: 0;
-	width: 0;
-	height: 3px;
-	transition: all 0.3s ease-in-out;
+	background-color: #ddd;
+	width: 3px;
+	height: 100%;
 }
 
-.link_effect:hover {
-	background-position: 0;
+.how_it_works ul li {
+	padding: 30px 50px;
+	position: relative;
 }
 
-.link_effect:hover::before {
-	width: 100%;
+.how_it_works li span {
+	position: absolute;
+	left: -28px;
+	font-size: 15px;
+	background-color: #fff;
+	padding: 15px 0;
+	top: 10px;
+	color: #6d7888;
 }
 
-/* media query to make hamburger menu if width is less than 570px */
+.how_it_works li:hover span {
+	transform: scale(1.2);
+	transition: all 0.5s;
+}

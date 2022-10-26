@@ -1,0 +1,36 @@
+.news_container {
+	margin: 70px 0;
+}
+.card {
+	margin: 0 auto;
+	width: 50%;
+	background-color: #caf0f8;
+	border-radius: 10px;
+	padding: 20px 30px;
+	margin: 40px auto;
+}
+
+.title {
+	margin-bottom: 2px;
+}
+
+p {
+	font-size: 0.8em;
+	margin-bottom: 15px;
+}
+
+.link {
+	margin: 10px 0;
+}
+
+a {
+	color: #0b3954;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+a:hover {
+	color: #002e02;
+	font-size: 1.3em;
+	transition: 0.3s;
+}
